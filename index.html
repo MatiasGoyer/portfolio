@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio personal">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="preload" href="normalize.css" as="style">
+	<link rel="stylesheet" href="normalize.css">
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="img/practice.ico" as="image">
+	<link rel="icon" href="img/practice.ico">
+</head>
+<body>
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Matías</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>  
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>  
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>  
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>  
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>  
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!--SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="imagen hero">
+            </div>
+            <h1>MATÍAS GOYER</h1>
+            <h2>Desarrollador Web- Trainee</h2>
+            <div class="redes">
+                <a href="https://github.com/MatiasGoyer" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/matiasgoyer/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/541134999201" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola,soy Matías Goyer.</span>Un entusiasta del desarrollo web en sus primeros pasos. Apasionado por la tecnología, me embarqué en este emocionante viaje para crear soluciones digitales impactantes. Mi enfoque está en aprender y crecer constantemente, comparto mi viaje y proyectos mientras sigo explorando nuevas tecnologías y desarrollando habilidades. ¡Bienvenido a mi rincón virtual donde la pasión por la tecnología se encuentra con el mundo del desarrollo web!</p>
+
+            <div class="fila">
+                <!--datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpeaños</strong>
+                            12/01/1999
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +54 1134999201
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            matiiasgoyer18@gmail.com
+                        </li>
+                        <li>
+                            <strong>Direccion</strong>
+                            Luis Guillon,Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span
+                        </li>
+                    </ul>
+                </div>
+
+                <!--intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-running"></i>
+                            <span>DEPORTE</span>
+                        </div> 
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>APRENDER</span>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="cv/MATIAS CV .pdf" target="_blank">
+                    Abrir mi CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </a>
+            </button>
+        </div>
+    </section>
+    <!--SECCION SKILLS-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!--Technical Skill-->
+                <div class="col">
+                    <h3>Habilidades Tecnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col">
+                    <h3>Virtudes Personales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--SECCION PORTFOLIO-->
+   <section class="portfolio" id="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                   <a href="https://frontedstoremg.netlify.app/index.html" target="_blank">
+                        <img src="img/p1.png" alt="proyecto1">
+                        <div class="overlay">
+                            <h3>FrontEnd Store</h3>
+                            <p>HTML5,CSS</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://tatooinecake.netlify.app/index.html" target="_blank">
+                        <img src="img/p2.png" alt="proyecto1">
+                        <div class="overlay">
+                            <h3>E-commerce pasteleria</h3>
+                            <p>HTML5,CSS</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://proyectoblogcafe3.netlify.app/index.html" target="_blank">
+                        <img src="img/p3.png" alt="proyecto1">
+                        <div class="overlay">
+                            <h3>Blog Cafe</h3>
+                            <p>HTML5,CSS</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://proyectofestivalmusicamg.netlify.app" target="_blank">
+                        <img src="img/p4.png" alt="proyecto1">
+                        <div class="overlay">
+                            <h3>Festival Musica</h3>
+                            <p>SCSS,Javascript</p>
+                        </div>
+                    </a>    
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <!--SECCION CONTACTO-->
+   <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div>
+                <div>
+
+                    <form action="https://formspree.io/f/xaygzzao"
+                            method="POST" id="form"> 
+                                <input type="text" placeholder="Tú nombre" name="name" id="name" required>
+                                <input type="number" placeholder="Numero Telefonico" name="telefono" id="telefono" required>
+                                <input type="email" placeholder="Email" name="email" id="email" required>
+                                <input type="text" placeholder="Asunto" name="asuto" id="asunto" required>
+                                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                                <button>
+                                    Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                                    <span class="overlay"></span>
+                                </button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <!--FOOTER-->
+   <footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="https://github.com/MatiasGoyer" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/matiasgoyer/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="hhttps://wa.me/541134999201" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        
+    </div>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="script.js"></script>
+</body>
+</html>
